@@ -1,0 +1,30 @@
+{
+  "name": "local-storage-auth",
+  "version": "1.0.0",
+  "description": "npm library to track web authentication using the local-storage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ani512/local-storage-auth.git"
+  },
+  "keywords": [
+    "auth"
+  ],
+  "author": "ani512",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ani512/local-storage-auth/issues"
+  },
+  "homepage": "https://github.com/Ani512/local-storage-auth#readme",
+  "devDependencies": {
+    "react": "*",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
