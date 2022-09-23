@@ -11,20 +11,14 @@
     "url": "git+https://github.com/Ani512/local-storage-auth.git"
   },
   "keywords": [
-    "auth"
+    "auth",
+    "local-storage",
+    "ethics-project"
   ],
   "author": "ani512",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ani512/local-storage-auth/issues"
   },
-  "homepage": "https://github.com/Ani512/local-storage-auth#readme",
-  "devDependencies": {
-    "react": "*",
-    "react-dom": "^18.2.0"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  }
+  "homepage": "https://github.com/Ani512/local-storage-auth#readme"
 }
