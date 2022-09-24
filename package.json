@@ -15,7 +15,7 @@
     "url": "git+https://github.com/Ani512/local-storage-auth.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/@Ani512"
   },
   "keywords": [
     "auth",
