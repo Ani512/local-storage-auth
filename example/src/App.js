@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes as Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import { setAuth, checkAuth } from "local-storage-auth";
+import { setAuth, checkAuth } from "./package";
 import './App.css';
 import { Typography } from "@mui/material";
 
@@ -24,7 +24,7 @@ function TestPage() {
 }
 
 function Error() {
-  checkAuth("test");
+  checkAuth();
   return (
     <Typography variant="h2">404 Error</Typography>
   )
