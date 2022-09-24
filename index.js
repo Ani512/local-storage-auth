@@ -1,7 +1,7 @@
 import { setAuth as setAuthInternal, getAuth } from './hooks/useLocalStorage';
 
 export function setAuth(status) {
-    if (status && typeof props.setAuth === 'boolean') {
+    if (status) {
         if (status === true) {
             setAuthInternal(true);
             return;

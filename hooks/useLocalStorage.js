@@ -18,7 +18,6 @@ export function getAuth() {
             isAuth = localStorage.getItem('auth');
             return isAuth === 'auth_true';
         }
-        return false; 
     } catch (error) {
         console.log(`Error in Getting Authentication: ${error}`)
     }
