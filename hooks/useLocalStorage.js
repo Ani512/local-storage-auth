@@ -14,12 +14,9 @@ export function setAuth(auth) {
 export function getAuth() {
     let isAuth = false;
     try {
-        if (typeof window !== undefined) {
+        if (typeof window !== 'undefined') {
             isAuth = localStorage.getItem('auth');
-            if (isAuth === 'auth_true') {
-                return true;
-            }
-            return false;
+            return isAuth === 'auth_true';
         }
         return false; 
     } catch (error) {

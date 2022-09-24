@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 import './App.css';
 
 function App() {
@@ -6,17 +8,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Box sx={{ direction: "flex" }}>
+          <Button sx={{ padding: 3, border: "3px solid green", marginRight: 2, color: 'green' }}>LOGIN TRUE</Button>
+          <Button sx={{ padding: 3, border: "3px solid red", marginLeft: 2, color: 'red' }}>LOGIN FALSE</Button>
+        </Box>
       </header>
     </div>
   );
