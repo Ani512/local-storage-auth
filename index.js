@@ -4,6 +4,7 @@ export function setAuth(status) {
     if (status && typeof props.setAuth === 'boolean') {
         if (status === true) {
             setAuthInternal(true);
+            return;
         } else {
             setAuthInternal(false);
         }
@@ -11,7 +12,7 @@ export function setAuth(status) {
     setAuthInternal(false);
 }
 
-export default function checkAuth(route) {
+export function checkAuth(route) {
     const auth = getAuth();
     if (auth!==null && auth===true) {
         window.location.replace(`/${route}`);
