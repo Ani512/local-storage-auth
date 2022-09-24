@@ -22,6 +22,7 @@ export function checkAuth(route) {
     
     if (route!=undefined && auth===true) {
         window.location.replace(`${baseRoute}/${route}`);
+        return;
     }
 
     console.log("Redirect Not Working")

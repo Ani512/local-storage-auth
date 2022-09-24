@@ -24,7 +24,7 @@ function TestPage() {
 }
 
 function Error() {
-  checkAuth();
+  checkAuth("test");
   return (
     <Typography variant="h2">404 Error</Typography>
   )
