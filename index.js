@@ -1,4 +1,4 @@
-import { setAuth as setAuthInternal, getAuth } from './hooks/useLocalStorage';
+import { setAuth as setAuthInternal, getAuth } from './useLocalStorage';
 
 export function setAuth(status) {
     if (status) {
@@ -14,9 +14,15 @@ export function setAuth(status) {
 
 export function checkAuth(route) {
     const auth = getAuth();
-    if (auth!==null && auth===true) {
-        window.location.replace(`/${route}`);
-    } else {
-        window.location.replace("/");
+    const baseRoute = window.location.origin;
+    if (auth === false) {
+        window.location.replace(baseRoute);
+        return;
+    } 
+    
+    if (route!=undefined && auth===true) {
+        window.location.replace(`${baseRoute}/${route}`);
     }
+
+    console.log("Redirect Not Working")
 }
