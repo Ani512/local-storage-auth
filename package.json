@@ -3,6 +3,10 @@
   "version": "1.1.2",
   "description": "npm library to track web authentication using the local-storage",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "useLocalStorage.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
