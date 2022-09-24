@@ -19,8 +19,8 @@ export function checkAuth(route) {
         window.location.replace(baseRoute);
         return;
     } 
-    
-    if (route!=undefined && auth===true) {
+
+    if (auth === true && route && route.length > 0) {
         window.location.replace(`${baseRoute}/${route}`);
         return;
     }
