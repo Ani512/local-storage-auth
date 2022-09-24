@@ -1,4 +1,4 @@
-import { setAuth as setAuthInternal } from './hooks/useLocalStorage';
+import { setAuth as setAuthInternal, getAuth } from './hooks/useLocalStorage';
 
 export function setAuth(status) {
     if (status && typeof props.setAuth === 'boolean') {
@@ -9,4 +9,13 @@ export function setAuth(status) {
         }
     }
     setAuthInternal(false);
+}
+
+export default function checkAuth(route) {
+    const auth = getAuth();
+    if (auth!==null && auth===true) {
+        window.location.replace(`/${route}`);
+    } else {
+        window.location.replace("/");
+    }
 }
