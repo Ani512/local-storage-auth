@@ -1,7 +1,8 @@
 export function setAuth(auth) {
     try {
         if (typeof window !== 'undefined' && auth === true) {
-            // Not using boolean true to abstract functioanlity from user
+            // Not using boolean to abstract functioanlity from user
+            // The end goal is to encrypt the string so that the user cannot change the value in localStorage 
             localStorage.setItem('auth', 'auth_true');
         } else {
             localStorage.setItem('auth', 'auth_false');
