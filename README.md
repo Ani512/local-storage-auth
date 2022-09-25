@@ -1,3 +1,4 @@
+[![🚀 release](https://github.com/Ani512/local-storage-auth/actions/workflows/publish.yml/badge.svg)](https://github.com/Ani512/local-storage-auth/actions/workflows/publish.yml)
 # local-storage-auth
 This is an [npm library](https://www.npmjs.com/package/local-storage-auth) for managing authentication for a website using localStorage and routing.
 
