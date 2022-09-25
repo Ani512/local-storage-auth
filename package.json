@@ -1,7 +1,7 @@
 {
   "name": "local-storage-auth",
   "version": "1.1.6",
-  "description": "npm library to track web authentication using the local-storage",
+  "description": "npm library to track web authentication using local-storage and routing",
   "main": "index.js",
   "files": [
     "index.js",
@@ -22,8 +22,8 @@
     "local-storage",
     "ethics-project"
   ],
-  "author": "ani512",
-  "license": "ISC",
+  "author": "Anirudh Mukund Umarji",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ani512/local-storage-auth/issues"
   },
